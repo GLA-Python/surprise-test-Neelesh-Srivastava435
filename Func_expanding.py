@@ -1,9 +1,9 @@
 #function expanding
 def see(a):
-    diff=a[1]-a[0]-1
+    diff=abs(a[1]-a[0])-1
     for i in range(1,len(a)):
-        if diff<a[i]-a[i-1]:
-            diff=a[i]-a[i-1]
+        if diff<abs(a[i]-a[i-1]):
+            diff=abs(a[i]-a[i-1])
         else:
             return(False)
     return (True)
